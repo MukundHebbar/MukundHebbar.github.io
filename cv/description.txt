@@ -1,0 +1,19 @@
+I am currently pursuing my Bachelor's in Comp Sci and Engineering at the International
+<br>
+Institute of Information Technology - Hyderabad. I belong to the freshers batch -2024
+<br>
+I am always fascinated by the world of mathematics, programming. I am always up for a challenge
+<br>
+I do have a fair amount of interest in web technologies, Javascript, React JS, System level programming.
+<br> 
+And IoT. I enjoy reading books, watching tv shows, listening to music and podcasts, playing basketball
+<br> and table tennis in my free time. I would like to learn how to play the piano.   
+
+My skills : 
+C++: i am well versed in C and C++, particularly in relation with Data Structures and Algorithms
+React: I have Built a few a websites for a hackathon and a course project
+Node JS: Worked with Node js for backend.
+FastAPI: Basic level, as part of my college curriculum
+Python:  Basic python, matplotlib, NumPy and few basics of pandas. 
+MySQL:   Part of my course curriculum
+MongoDB: part of my course curriculum.

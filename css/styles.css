@@ -1,0 +1,286 @@
+/* Global styles */
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Wallpoet&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.additional-image {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.additional-image img {
+  max-width: 250px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    min-height: 100vh;
+    margin: 0;
+    padding-top: 60px; /* Add padding to account for fixed navbar */
+}
+
+/* Index page - Purple diagonal gradient */
+body.home-page {
+    background: linear-gradient(135deg, #8a2be2, #4b0082);
+    color: white;
+}
+
+/* Skills page - Blue diagonal gradient */
+body.skills-page {
+    background: linear-gradient(135deg, #1e90ff, #0000cd);
+    color: white;
+}
+
+/* Education page - Grey diagonal gradient */
+body.edu-page {
+    background: linear-gradient(135deg, #a9a9a9, #4d4d4d);
+    color: white;
+}
+
+/* Additional common styles for content */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+header {
+    padding: 1rem 0;
+}
+
+h1 {
+    font-family: 'Wallpoet', cursive;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+/* Navigation styles - full width top strip */
+nav {
+    background-color: #40E0D0; /* Turquoise color */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 0.8rem;
+    z-index: 1000; /* Ensure navbar stays on top */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+}
+
+.profile-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  
+  .profile-image {
+    width: 250px;  /* Smaller width */
+    flex-shrink: 0;
+  }
+  .profile-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;  /* Creates a circle */
+    object-fit: cover;  /* Ensures image fills the circle */
+    border: 3px solid white;  /* Optional: adds a border */
+  }
+  .profile-text {
+    flex-grow: 1;
+  }
+  .profile-section p {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.6;
+  }
+
+  .profile-section a {
+    color: #ffcc00; /* Bright yellow color that's visible against purple */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .profile-section a:hover {
+    color: #ffffff; /* Change to white on hover */
+    text-decoration: underline;
+  }
+  nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end; /* Align items to the right */
+    max-width: 1200px; /* Maximum width for the content */
+    margin: 0 auto; /* Center the navigation content */
+    padding: 0 2rem; /* Add some padding on the sides */
+}
+
+nav ul li {
+    margin-left: 1.5rem; /* Space between nav items */
+}
+
+nav ul li a {
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 1.1rem; /* Increased font size */
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    font-weight: 500; /* Make text slightly bolder */
+}
+
+nav ul li a:hover {
+    background-color: #FF0000; /* Red on hover */
+    text-decoration: none;
+}
+
+/* Active navigation link */
+body.home-page nav ul li a.active,
+body.skills-page nav ul li a.active,
+body.edu-page nav ul li a.active {
+    background-color: #FF0000; /* Red for active page */
+}
+
+/* Skills list styles */
+.skills-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .skill-item {
+    display: flex;
+    align-items: center;
+    background-color: rgba(94, 229, 16, 0.767);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .skill-description {
+    flex: 2;
+    padding-right: 1.5rem;
+  }
+  
+  .skill-description p {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.6;
+  }
+  
+  .skill-image {
+    flex: 1;
+    max-width: 180px;
+  }
+  
+  .skill-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+
+  /* Education page styles */
+.education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.education-item {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #ffd700, #ffaa00); /* Yellow gradient */
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: #333; /* Dark text for better contrast on yellow */
+}
+
+.edu-content {
+  flex: 2;
+  padding-right: 1.5rem;
+}
+
+.edu-content h3 {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.edu-content p {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+}
+
+.edu-image {
+  flex: 1;
+  max-width: 180px;
+}
+
+.edu-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.text-input-section {
+  margin-top: 3rem;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+}
+
+.text-input-section h2 {
+  font-family: 'Inria Sans', sans-serif;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+#message-input {
+  width: 100%;
+  padding: 1rem;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+#submit-button {
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  background-color: #40E0D0;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-family: 'Inria Sans', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#submit-button:hover {
+  background-color: #FF0000;
+}
+
+#word-count {
+  margin-top: 0.5rem;
+  font-family: 'PT Sans', sans-serif;
+  color: #ccc;
+  font-size: 0.9rem;
+}
